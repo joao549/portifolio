@@ -434,6 +434,19 @@ section.sobre .flex {
 
     /*MENU HAMBURGUER*/
 
+    .menu-mobile nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+
+    .menu-mobile nav ul li a {
+        font-size: 22px;
+        padding: 15px 0;
+        white-space: normal;
+        word-break: break-word; 
+    }
+
     .btn-abrir-menu i {
         display: inline-block;
     }
