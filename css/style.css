@@ -1,0 +1,484 @@
+/*Estilo Geral*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h1.titulo {
+    color: #ffff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h1.titulo span {
+    color: #3375a5;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #786fff;
+    transform: scale(1.15);
+}
+
+/*Estilo cabecalho*/
+header {
+    padding: 40px 4%;
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #3375a5;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav.menu-desktop a:hover {
+    color: #ffff;
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+header .interface .logo a:hover {
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button,
+.btn-e-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #3375a5;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+
+
+header .logo img {
+    width: 100px;
+}
+
+header .logo>img {
+
+    transform: scale(1.15);
+}
+
+/*ESTILO DO FORMULARIO*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    ;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+    color: #3375a5;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #3375a5;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+form input::placeholder {
+    color: #3375a5;
+
+}
+
+/*ESTILO DA EXPERIÊNCIA*/
+
+.experiencia h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* TABELA AJUSTADA */
+.tabela {
+  width: 100%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-size: 30px;
+  color: #3375a5;
+  table-layout: fixed;
+}
+
+/* CELULAS */
+.tabela th,
+.tabela td {
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: 33.33%;
+  border: 2px solid #3375a5;
+  word-break: break-word;
+}
+
+.tabela td {
+  color: #fff;
+}
+
+/* IMAGENS DENTRO DA TABELA */
+.tabela img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*ESTILO DO MENU MOBILE*/
+
+.btn-abrir-menu i {
+    color: #3375a5;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #3375a5;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #3375a5;
+    color: #000;
+
+}
+
+.overlay-menu {
+    background-color: #00000052;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.img-topo-site>img {
+    padding: 0;
+    border: 0;
+    width: 300px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: #ffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #3375a5;
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #ffff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+
+}
+
+/* CONHECIMENTO */
+
+section.conhecimento {
+    padding: 40px 4%;
+}
+
+section.conhecimento .flex {
+    gap: 60px;
+}
+
+.conhecimento .conhecimento-box {
+    color: #ffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.conhecimento .conhecimento-box i {
+    font-size: 70px;
+    color: #3375a5;
+}
+
+.conhecimento .conhecimento-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.conhecimento .conhecimento-box:hover {
+    transform: scale(1.15);
+    box-shadow: 8px #ffffff78;
+    border: 1px solid #ffffff78;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+    padding: 40px 4%;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #ffff;
+}
+
+.sobre .txt-sobre h1 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre h1 span {
+    color: #3375a5;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #3375a5;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 999px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /*Cabecalho*/
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-e-contato {
+        text-align: center;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 30px;
+    }
+
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 50px;
+    }
+
+    section.topo-do-site .flex {
+        gap: 65px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /*MENU HAMBURGUER*/
+
+    .btn-abrir-menu i {
+        display: inline-block;
+    }
+
+    .btn-abrir-menu i:hover {
+        transform: scale(1.15);
+        transition: .2s;
+    }
+
+    /*TABELA EXPERIENCIA*/
+
+    .tabela {
+    font-size: 18px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 12px;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+
+  .tabela {
+    min-width: 400px;
+    display: table;
+    font-size: 9px;
+  }
+
+  .tabela img{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .tabela{
+        min-width: 200px;
+        font-size: 7px;
+    }
+
+   .tabela td {
+        text-align: left;
+    }
+}
